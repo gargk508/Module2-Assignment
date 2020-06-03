@@ -14,24 +14,19 @@
 			font-size: 35px; 
 		}
 		@media (min-width:992px){
-			.main{
-				border:1px solid black;
-				border-color: transparent;
-				height: 300px;
-				padding: 30px;
-			}
 			.column-1{
 				border:2px solid black;
 	    		width:32%;
-	    		height:300px; 
+	    		height:270px; 
 				float:left;
 				margin-right: 1.5%;
+				margin-left: 0.4%;
 				box-sizing: border-box;
 			}
 			.column-2{
 				border:2px solid black;
 	    		width:32%;
-	    		height:300px; 
+	    		height:270px; 
 				float:left;
 				margin-right: 1.5%;
 				box-sizing: border-box;
@@ -39,17 +34,81 @@
 			.column-3{
 				border:2px solid black;
 	    		width:32%;
-	    		height:300px; 
+	    		height:270px; 
 				float:left;
 			}
-			#heading{
-				border-bottom:2px solid black;
-				border-left:2px solid black;
-				width:120px;
-				height:30px;
-				float: right;
-				text-align: center;
-			}			
+			
+		}
+		@media (max-width:991px) and (min-width: 768px){
+			.column-1{
+				border:2px solid black;
+	    		width:48.5%;
+	    		height:270px; 
+				float:left;
+				margin-right: 1.5%;
+				margin-bottom: 20px;
+				box-sizing: border-box;
+			}
+			.column-2{
+				border:2px solid black;
+	    		width:48.5%;
+	    		height:270px; 
+				float:left;
+				margin-right: 1.5%;
+				margin-bottom: 20px;
+				box-sizing: border-box;
+			}
+			.column-3{
+				border:2px solid black;
+	    		width:98%;
+	    		height:270px; 
+				float:left;
+			}
+			
+		}
+		@media (max-width:767px){
+
+			.column-1{
+				border:2px solid black;
+	    		width:98%;
+	    		height:270px; 
+				float:left;
+				margin-right: 1.5%;
+				margin-bottom: 20px;
+				margin-left: 0.4%;
+				box-sizing: border-box;
+			}
+			.column-2{
+				border:2px solid black;
+	    		width:98%;
+	    		height:270px; 
+				float:left;
+				margin-right: 1.5%;
+				margin-bottom: 20px;
+				margin-left: 0.4%;
+				box-sizing: border-box;
+			}
+			.column-3{
+				border:2px solid black;
+	    		width:98%;
+	    		height:270px; 
+	    		margin-left: 0.4%;
+				float:left;
+			}		
+		}
+		#heading{
+			background-color: white;
+			border-bottom:2px solid black;
+			border-left:2px solid black;
+			width:160px;
+			height:30px;
+			float: right;
+			text-align: center;
+			font-size: 20px;
+		}	
+		#description{
+			padding: 30px 0px 50px 0px;
+			font-size: 18px;
 		}
 	</style>
 </head>
@@ -57,13 +116,25 @@
 	<h1>Course Topics</h1>
 	<div class="main">
 		<div class="column-1">
-			<header id="heading">asdfgas</header>
+			<header id="heading">HTML</header>
+			<br>
+			<p id="description">
+				First developed by Tim Berners-Lee in 1990, HTML is short for Hypertext Markup Language. HTML is used to create electronic documents (called pages) that are displayed on the World Wide Web. Each page contains a series of connections to other pages called hyperlinks. Every web page you see on the Internet is written using one version of HTML code or another. 
+			</p>
 		</div>
 		<div class="column-2">
-			<header id="heading">asdfghj</header>
+			<header id="heading">CSS</header>
+			<br>
+			<p id="description">
+				sdfghjk  
+			</p>
 		</div>
 		<div class="column-3"">
-			<header id="heading">qwertda</header>
+			<header id="heading">JAVASCRIPT</header>
+			<br>
+			<p id="description">
+				sdfghjk  
+			</p>
 		</div>
 	</div>
 </body>
